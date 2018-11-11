@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>User Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Explore Bangladesh</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">User Home</a></li>
+      <li><a href="/profile">Profile</a></li>
+      <li><a href="/changepass">Change Password</a></li>
+      <li><a href="/uedit">Edit Info</a></li>
+      <li><a href="#">Publish Post</a></li>
+     <!--  <li><a href="#">Contact Us</a></li> -->
+    </ul>
+     <form class="navbar-form navbar-right" action="/logout">
+
+      <button type="submit" class="btn btn-danger">Logout</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container">
+    <!-- <h2 class="bg-danger" style="text-align: center;  font-family: Aerial">Admin Dashboard</h2> -->
+<form method="post" action="/post">
+  <div class="form-group">
+    <label for="title">Post Title</label>
+    <input type="text" class="form-control" id="title" placeholder="Enter your post name" name="title" required>
+  </div>
+
+  <div class="form-group">
+    <label for="postdescription">Post Description</label>
+    <input type="textfield" class="form-control" id="description" placeholder="Enter your post details" name="description" required>
+  </div>
+  <button type="submit" class="btn btn-success center-block">Post</button>
+
+</form>
+</div>
+
+</body>
+</html>
